@@ -2,6 +2,7 @@
 Front-end languages:
   * React
   * Bootstrap
+
 Back-end languages:
   * NodeJS
   * Express
