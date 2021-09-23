@@ -1,0 +1,78 @@
+import React from "react";
+import BootstrapSwitchButton from "bootstrap-switch-button-react";
+import useUpdatePirmd from "../../hooks/pirmoVaikoLankomumoHooks/1VaikoPirmd";
+import useGetVaikoLankomuma from "../../hooks/pirmoVaikoLankomumoHooks/getVaikoLankomuma";
+import { Card, Form, Col, Row, Spinner } from "react-bootstrap";
+import { useQuery, useQueryClient } from "react-query";
+const Pirmo_VaikoLankomumoPirm = () => {
+  const { status, data, isFetching, error } = useGetVaikoLankomuma();
+  //   console.log(data)
+  const { mutate } = useUpdatePirmd();
+  const queryClient = useQueryClient();
+
+  const toggle = async (Pirm_Pirmadienis, userId) => {
+    await mutate(userId);
+    await queryClient.invalidateQueries("Lankomumas");
+    await queryClient.invalidateQueries("Lankomumas");
+    await queryClient.invalidateQueries("Lankomumas");
+    await queryClient.invalidateQueries("Lankomumas");
+  };
+  return (
+    <div>
+      {status === "loading" ? (
+        <Spinner size="sm" animation="border" role="status">
+          <span className="sr-only">Kraunasi...</span>
+        </Spinner>
+      ) : status === "error" ? (
+        <span>Error:</span>
+      ) : (
+        data.vaikoDuom.map((lankomumas, i) => {
+          // console.log(lankomumas);
+          return (
+            <div key={i}>
+            <h6  className="text-center">Pirm</h6>
+              <BootstrapSwitchButton
+                size="xs"
+                id={lankomumas.userId}
+                checked={lankomumas.Pirm_Pirmadienis}
+                onlabel="O"
+                offlabel="I"
+                onstyle="outline-success"
+                onChange={() =>
+                    toggle(lankomumas.Pirm_Pirmadienis, lankomumas.userId)
+                  }
+              >
+                  
+                {/* <Form.Check
+                  type="switch"
+                  size="xs"
+                  id={lankomumas.userId}
+                  defaultChecked={lankomumas.Pirm_Pirmadienis}
+                  onClick={() =>
+                    toggle(lankomumas.Pirm_Pirmadienis, lankomumas.userId)
+                  }
+                /> */}
+              </BootstrapSwitchButton>
+            </div>
+          );
+        })
+      )}
+      {/* <BootstrapSwitchButton
+        checked={true}
+        onstyle="outline-success"
+        offstyle="outline-danger"
+        size="xs"
+      /> */}
+      {/* <Form.Check
+                        type="switch"
+                        id={vaikas.userId}
+                        defaultChecked={vaikas.AdminConfirm}
+                        onClick={() =>
+                          toggle(vaikas.AdminConfirm, vaikas.userId)
+                        }
+                      /> */}
+    </div>
+  );
+};
+
+export default Pirmo_VaikoLankomumoPirm;

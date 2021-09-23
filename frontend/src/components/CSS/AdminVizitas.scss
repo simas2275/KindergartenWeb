@@ -1,0 +1,18 @@
+.VizitoUzrasas{
+    font-size: 25px;
+}
+
+.CardDaugiau{
+   border: solid 2px rgb(34, 170, 34);
+
+    .CardDaugiauLaikas{
+        color: rgb(34, 170, 34);
+    }
+}
+
+.CardMaziau{
+    border: solid 2px rgb(180, 180, 180);
+    color: rgb(180, 180, 180);
+   
+}
+div:empty { display: none }

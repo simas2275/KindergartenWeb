@@ -1,0 +1,55 @@
+.PriemimoCon1 {
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+.RegistracijosCon {
+  padding-bottom: 3rem;
+
+  
+}
+.BendraInfo{
+    padding-top:5rem;
+    font-size:18px;
+  }
+
+  .PriemimoPav{
+    text-align:center;
+    font-size:34px;
+  }
+.VizitoCon {
+  background-image: url("../../assets/images/ss.jpg");
+  max-width: 100%;
+  height: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.AplankymoColum {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  color: white;
+  background-color: rgb(163, 163, 163);
+  padding: 1rem 0rem;
+}
+@media only screen and (max-width: 768px) {
+  .AplankymoColum {
+    text-align: center;
+  }
+}
+.KlausimuPav{
+    text-align: center;
+    padding: 2rem 0rem;
+}
+
+.KlausimoInformacija{
+  text-align: center;
+  font-size:20px;
+}
+
+.KainuCont{
+    padding-top: 20%;
+    text-align: center;
+}

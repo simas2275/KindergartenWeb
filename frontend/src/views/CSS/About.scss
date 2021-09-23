@@ -1,0 +1,95 @@
+@media only screen and (min-width: 991px) {
+  .ApieApr {
+    padding-top: 8rem;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .ApieApr {
+    padding-top: 3rem;
+  }
+}
+
+.PirmasApieCon {
+  padding: 2rem 0rem;
+  .ApieApr {
+    text-align: center;
+  }
+}
+.KolektyvoCon {
+padding-right:0rem;
+  @media only screen and (max-width: 768px) {
+    .KolektyvoRow{
+      text-align: center;
+    }
+    .KolektVard1 {
+      padding-bottom: 3rem;
+      
+    }
+    .KolektVard2 {
+      padding-bottom: 3rem;
+    }
+    .KolektVard3 {
+      padding-bottom: 3rem;
+    }
+  }
+  .KolektyvoApr{
+    text-align: center;
+    padding: 3rem 0rem;
+  }
+  .KolektVard1 {
+    text-align: center;
+  }
+  .KolektVard2 {
+    text-align: center;
+  }
+  .KolektVard3 {
+    text-align: center;
+  }
+  
+}
+
+// .KolektyvoRow {
+//   margin-left: 10rem;
+//   margin-right: 10rem;
+// }
+// .KolektyvoApr {
+//   text-align: center;
+//   margin-top: 2rem;
+//   margin-bottom: 5rem;
+// }
+
+// .KolektVard1 {
+//   margin-top: 10rem;
+// }
+
+// .KolektVard2 {
+//   margin-top: 5rem;
+// }
+
+// .KolektVard3 {
+//   margin-top: 4rem;
+// }
+
+.LocationCon {
+  background-color: rgb(192, 192, 192);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  .LocationApr {
+    text-align: center;
+    padding: 6rem 8rem 0rem;
+  }
+  @media only screen and (max-width: 991px) {
+    .LocationPhoto {
+      text-align: center;
+    }
+
+    .LocationApr {
+      text-align: center;
+      padding: 2rem 2rem;
+    }
+  }
+
+ 
+
+}
+

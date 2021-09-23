@@ -1,0 +1,34 @@
+@import "../../App.scss";
+
+.CloseButton{
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #929fa7;
+    border: none;
+    &:hover{
+        background-color: $navBar !important;
+    }
+    &:focus{
+        background-color: $navBar;
+    }
+    &:active{
+        background-color: $navBar;
+    }
+}
+
+.Regis{
+    font-weight: bold;
+    border-radius: 8px;
+    background-color: #B16664;
+    border: none;
+    &:hover{
+        background-color: $navBar !important;
+    }
+    &:focus{
+        background-color: $navBar;
+    }
+    &:active{
+        background-color: $navBar;
+    }
+}

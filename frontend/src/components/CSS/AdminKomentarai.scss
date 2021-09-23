@@ -1,0 +1,12 @@
+
+.KlausimoBendras{
+  padding-bottom: 1rem;
+  margin-left:0.5rem;
+  
+}
+.jungtukas{
+  .custom-control-input:checked~.custom-control-label::before {
+    border: none;
+    background-color: rgb(202, 202, 202);
+  }
+}

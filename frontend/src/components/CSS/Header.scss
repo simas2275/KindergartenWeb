@@ -1,0 +1,35 @@
+.Pavadinimas{
+    font-size: 3rem;
+    font-weight: 500;
+}
+@media only screen and (min-width: 575px) {
+    .Pavadinimas{ 
+        margin-left:5rem;
+    }
+  }
+
+
+
+@media only screen and (max-width: 575px) {
+    .ColPavadinimo{ 
+        text-align: center;
+    }
+  }
+
+@media only screen and (min-width: 575px) {
+    .ColVartotojo{ 
+        margin-left:5rem;
+    }
+  }
+
+@media only screen and (max-width: 575px) {
+    .ColVartotojo{ 
+        text-align: center;
+    }
+  }
+
+  @media only screen and (max-width: 575px) {
+    .AprasymasHeader{ 
+        text-align: center;
+    }
+  }

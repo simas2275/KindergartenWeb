@@ -1,0 +1,24 @@
+// @import "../../App.scss";
+.ContactHead {
+
+    background-color: #f8f9fa;
+}
+
+.ContactTab {
+    text-align: center;
+    padding: 3rem 0rem 6rem;
+    .AddresLink {
+      margin: auto;
+    }
+    @media only screen and (max-width: 768px) {
+      .AddresLink {
+        padding-bottom: 4rem;
+      }
+    }
+    .Map {
+      display: block;
+      margin: 0 auto;
+      width: 100%;
+      height: 300px;
+    }
+  }
