@@ -2,6 +2,8 @@
 Front-end languages:
   * React
   * Bootstrap
+  * HTML
+  * SCSS
   * Firebase
 
 Back-end languages:
